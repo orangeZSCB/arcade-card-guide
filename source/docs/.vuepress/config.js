@@ -3,6 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
+  base: '/arcade-card-guide/',
   lang: 'zh-CN',
   title: '日本街机 Passport 卡技术指南',
   description: 'Aime / Banapassport / e-amusement pass / NESiCA 与 Amusement IC 协议的逆向工程文档',

@@ -2,29 +2,27 @@
 
 Aime / Banapassport / e-amusement pass / NESiCA 与 Amusement IC 协议的逆向工程文档。
 
-- 在线文档：见本仓库 GitHub Pages（Settings → Pages）
-- 文档源码：[`docs/`](docs/)
-- 配套工具（PN532 读写 / SPAD0 加解密 / CardCipher）：[`tools/`](tools/)
+**本仓库根目录即静态站点**（已构建完成），可直接用 GitHub Pages 从 `main` 分支根目录发布。
 
-## 本地预览
+## 目录说明
 
-```bash
-npm install
-npm run docs:dev
-```
-
-## 构建
-
-```bash
-npm run docs:build   # 输出到 docs/.vuepress/dist
-```
-
-## 内容可信度标注
-
-| 标记 | 含义 |
+| 路径 | 内容 |
 |---|---|
-| ✅ 已验证 | 实卡 + PN532 实测 |
-| 🔍 社区逆向 | 来自公开逆向工程项目 |
-| ⚠️ 推测 | 基于证据的推断 |
+| 根目录（`index.html`、`assets/` 等） | VuePress 构建好的静态站点，`base = /arcade-card-guide/` |
+| `source/docs/` | 文档 Markdown 源码 |
+| `source/tools/` | 配套工具（PN532 读写 / SPAD0 加解密 / CardCipher） |
+| `source/package.json` | VuePress 工程 |
+
+## 重新构建
+
+```bash
+cd source
+npm install
+npm run docs:build   # 输出到 source/docs/.vuepress/dist，需自行复制回根目录
+```
+
+## 可信度标注
+
+✅ 已验证（实卡 + PN532 实测）｜🔍 社区逆向｜⚠️ 推测
 
 仅供学习与私服研究使用，请支持正版街机。
