@@ -1,0 +1,17 @@
+{
+  "name": "arcade-card-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.30",
+    "@vuepress/theme-default": "^2.0.0-rc.132",
+    "sass-embedded": "^1.103.1",
+    "vue": "^3.5.42",
+    "vuepress": "^2.0.0-rc.30"
+  }
+}
