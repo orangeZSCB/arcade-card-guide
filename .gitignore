@@ -3,3 +3,4 @@ source/docs/.vuepress/dist/
 source/docs/.vuepress/.cache/
 source/docs/.vuepress/.temp/
 .DS_Store
+__pycache__/
